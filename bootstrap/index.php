@@ -311,15 +311,10 @@ if($ossec_handle == NULL)
               {
                   echo '<div class="card shadow mb-4">
                           <div class="card-header py-3">
-                          <h6 class="m-0 font-weight-bold text-primary">Level 7 | Rule Id: 551</h6>
-                          <h6 class="m-0 font-weight-bold text-primary">Location | ubuntu-18->syscheck</h6>
-                          </div>
-                          <div class="card-body">
-                          ';
-
-                            $alert_array[$alert_count]->toHtml();
-
-                    echo '</div></div>';
+                             ';
+                  echo $alert_array[$alert_count]->toHtml();
+                  echo '</div> <div class="card-body">
+                  </div></div>';
                   $alert_count--;
               }
           }
