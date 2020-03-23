@@ -76,6 +76,11 @@ if($ossec_handle == NULL)
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <script type="text/javascript" src="js/calendar.js"></script>
+  <script type="text/javascript" src="js/calendar-en.js"></script>
+  <script type="text/javascript" src="js/calendar-setup.js"></script>
+  <script type="text/javascript" src="js/prototype.js"></script>
+  <script type="text/javascript" src="js/hide.js"></script>
 
   <?php require('imports/allCSS.php'); ?>
 
@@ -163,7 +168,7 @@ if($ossec_handle == NULL)
                                 $agent{'name'}." (".$agent{'ip'}.')'.$amsg.'</a><br /> 
                                 </span>
 
-                                <div id="contentagt'.$agent_count.'" style="display: none">
+                                <div id="contentagt'.$agent_count.'">
 
                                 <a  href="#" '.$aclass.' title="'.$atitle.'" 
                                 onclick="HideSection(\'agt'.
