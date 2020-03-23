@@ -168,7 +168,7 @@ if($ossec_handle == NULL)
                                 $agent{'name'}." (".$agent{'ip'}.')'.$amsg.'</a><br /> 
                                 </span>
 
-                                <div id="contentagt'.$agent_count.'">
+                                <div id="contentagt'.$agent_count.'" style="display: none">
 
                                 <a  href="#" '.$aclass.' title="'.$atitle.'" 
                                 onclick="HideSection(\'agt'.
